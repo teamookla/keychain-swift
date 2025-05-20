@@ -2,22 +2,22 @@
 import PackageDescription
 
 let package = Package(
-    name: "KeychainSwift",
+    name: "KeychainKit",
     products: [
-        .library(name: "KeychainSwift", targets: ["KeychainSwift"]),
+        .library(name: "KeychainKit", targets: ["KeychainKit"]),
     ],
     dependencies: [
     ],
     targets: [
         .target(
-          name: "KeychainSwift",
+          name: "KeychainKit",
           dependencies: [],
           path: "Sources",
           exclude: ["Info.plist"]
         ),
         .testTarget(
-            name: "KeychainSwiftTests",
-            dependencies: ["KeychainSwift"],
+            name: "KeychainKitTests",
+            dependencies: ["KeychainKit"],
             exclude: ["ClearTests.swift"]
         )
     ]
